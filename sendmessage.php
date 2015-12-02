@@ -9,4 +9,4 @@ if(strlen($message)>0)
 {
     $insert = $db->query("INSERT INTO globalmessage (username,message,created) VALUES ('{$_SESSION['username']}','{$message}',NOW())");
 }
-header("Location: chatpage.php");
+header("Refresh:0; url=chatpage.php");
